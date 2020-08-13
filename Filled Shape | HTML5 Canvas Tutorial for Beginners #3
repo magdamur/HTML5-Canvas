@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>Filled Shape | HTML5 Canvas Tutorial for Beginners #3</title>
+        <style>
+            #canvas {
+                border: 1px solid;
+            } 
+        </style>
+	</head>
+	<body>	
+        <canvas id="canvas" width="600" height="300">
+            Sorry your browser does not support the canvas tag.
+        </canvas>
+        <script>
+            var canvas, context;
+            canvas = document.getElementById('canvas');
+            context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.moveTo(100,100);
+            context.lineTo(100,200);
+            context.lineTo(25,200);
+            context.lineTo(25,100);
+            context.fill();
+
+        </script>
+    </body>
+</html>
