@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>HTML5 Canvas #1 - How to draw the line with rounded end caps</title>
+	</head>
+	<body>	
+        <canvas id="canvas" width="600" height="300">
+            Sorry your browser does not support the canvas tag.
+        </canvas>
+        <script>
+            var canvas, context;
+            canvas = document.getElementById('canvas');
+            context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.lineWidth = 20;
+            context.lineCap = 'round'; // possible values: butt, round,square
+            context.moveTo(100,100);
+            context.lineTo(100,200);
+
+            context.stroke();
+        
+        </script>
+    </body>
+</html>
