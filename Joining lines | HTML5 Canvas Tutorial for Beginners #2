@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>HTML5 Canvas #2 - How to join the lines</title>
+	</head>
+	<body>	
+      <canvas id="canvas" width="600" height="300">
+          Sorry your browser does not support the canvas tag.
+      </canvas>
+      <script>
+          var canvas, context;
+          canvas = document.getElementById('canvas');
+          context = canvas.getContext('2d');
+
+          context.beginPath();
+          context.lineWidth = 20;
+          context.lineJoin = 'round'; //possible values: bevel, round, miter
+          context.moveTo(100,100);
+          context.lineTo(100,200);
+          context.lineTo(5,200);
+          context.stroke();
+      
+      
+      </script>
+    </body>
+</html>
