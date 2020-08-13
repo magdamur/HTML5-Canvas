@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>How to Detect the Browser Support | HTML5 Canvas Tutorial for Beginners #5</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+ 	</head>
+	<body>	
+        <canvas id="canvas" width="600" height="300"></canvas>
+        <script>
+            //to detect canvas support you can use Modernizr
+            if(Modernizr.canvas) {
+                alert ("Canvas is supported");
+            }
+            else
+            {
+                //fallback code
+            }
+
+        </script>
+    </body>
+</html>
