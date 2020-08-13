@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>Styling Basic Shape | HTML5 Canvas Tutorial for Beginners #4</title>
+	</head>
+	<body>	
+        <canvas id="canvas" width="600" height="300">
+            Sorry your browser does not support the canvas tag.
+        </canvas>
+        <script>
+            var canvas, context;
+            canvas = document.getElementById('canvas');
+            context = canvas.getContext('2d');
+
+            context.moveTo(100,100);
+            context.lineTo(100,200);
+            context.lineTo(25,200);
+            context.lineTo(25,100);
+            context.closePath();
+
+            context.lineWidth = 20;
+            context.strokeStyle = '#666699';
+            context.stroke();
+
+            context.fillStyle = '#f0f0f5';
+            context.fill();
+        </script>
+    </body>
+</html>
